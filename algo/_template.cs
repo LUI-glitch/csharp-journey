@@ -1,9 +1,11 @@
-    string line = Console.ReadLine();
-    string[] parts = line.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+    string line = Console.In.ReadToEnd();
+    string[] parts = line.Split(new[] { ' ', '\n', '\r'}, StringSplitOptions.RemoveEmptyEntries);
 
     long sum = 0;
-    long a = 0;
-    for (int i = 0; i < parts.Length; i++)
+
+    int n = int.Parse(parts[0]);
+
+    for (int i = 1; i <= n; i++)
     {
        sum = sum + long.Parse(parts[i]);
     }
