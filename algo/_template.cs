@@ -1,12 +1,10 @@
     string line = Console.ReadLine();
-    string[] parts = line.Split(" ");
+    string[] parts = line.Split(' ', StringSplitOptions.RemoveEmptyEntries);
 
     long sum = 0;
-    int a = 0;
+    long a = 0;
     for (int i = 0; i < parts.Length; i++)
     {
-        a  = 0;
-       if (parts[i]!= "") a = int.Parse(parts[i]); 
-       sum = sum + a;
+       sum = sum + long.Parse(parts[i]);
     }
     Console.WriteLine(sum);
