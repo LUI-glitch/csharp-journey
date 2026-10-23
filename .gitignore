@@ -1,0 +1,20 @@
+# Сборка .NET
+bin/
+obj/
+artifacts/
+*.user
+*.suo
+
+# IDE
+.idea/
+.vs/
+.vscode/
+*.DotSettings.user
+
+# macOS
+.DS_Store
+
+# Локальные входные данные для задач
+*.in
+*.txt
+!**/README.txt
